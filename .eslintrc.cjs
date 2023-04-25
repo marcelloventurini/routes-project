@@ -32,12 +32,16 @@ module.exports = {
     ],
     'no-multiple-empty-lines': [
       'error',
-      {'max': 1}
+      { 'max': 1 }
     ],
     'padding-line-between-statements': [
       'error',
-      {'blankLine': 'always', 'prev': '*', 'next': 'return'},
-      {'blankLine': 'always', 'prev': 'block-like', 'next': '*'}
+      { 'blankLine': 'always', 'prev': '*', 'next': 'return' },
+      { 'blankLine': 'always', 'prev': 'block-like', 'next': '*' }
+    ],
+    'object-curly-spacing': [
+      'error',
+      'always'
     ],
     'react-refresh/only-export-components': 'warn',
   },
