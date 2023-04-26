@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Products.module.css'
 import { Link } from 'react-router-dom'
+import Head from './Head'
 
 function Products() {
   const [products, setProducts] = React.useState(null)
@@ -15,6 +16,7 @@ function Products() {
 
   return (
     <section className={styles.products + ' animationLeft'}>
+      <Head title='Home' description='Página principal do site.' />
       {products.map((product) => (
         <Link to={`produto/${product.id}`} key={product.id}>
           <h1 className={styles.title}>{product.nome}</h1>
