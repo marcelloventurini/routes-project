@@ -1,0 +1,30 @@
+body {
+  margin: 2rem;
+}
+
+img {
+  max-width: 100%;
+  border-radius: .5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.animationLeft {
+  transform: translateX(-20px);
+  opacity: 0;
+  animation: animationLeft .3s forwards;
+}
+
+@keyframes animationLeft {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}

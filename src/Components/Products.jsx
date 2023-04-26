@@ -3,7 +3,7 @@ import styles from './Products.module.css'
 
 function Products() {
   return (
-    <div>
+    <div className={styles.products}>
       <h1>Produtos</h1>
     </div>
   )
