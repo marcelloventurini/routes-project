@@ -43,6 +43,11 @@ module.exports = {
       'error',
       'always'
     ],
+    'max-len': [
+      'error',
+      { 'code': 80 },
+      { 'tabWidth': 2 }
+    ],
     'react-refresh/only-export-components': 'warn',
   },
 }
