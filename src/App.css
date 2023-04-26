@@ -14,6 +14,19 @@ a {
 
 h1 {
   font-size: 1.5rem;
+  color: #222;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+  margin: 0 auto;
+  min-height: calc(100vh + 10rem);
+}
+
+.content {
+  flex: 1;
 }
 
 .animationLeft {
@@ -26,5 +39,20 @@ h1 {
   to {
     transform: initial;
     opacity: initial;
+  }
+}
+
+.loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 10px solid #ccc;
+  border-right-color: transparent;
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
   }
 }

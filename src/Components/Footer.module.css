@@ -1,0 +1,8 @@
+.footer {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: #222;
+  height: 10rem;
+  padding-top: 5rem;
+  box-sizing: border-box;
+}
